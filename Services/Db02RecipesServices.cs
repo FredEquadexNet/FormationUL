@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class Db01RecipesServices : AbstractRecipesServices
+    public class Db02RecipesServices : AbstractRecipesServices
     {
         public override List<Recipe> GetAll()
         {
             var cs = "ConnectionStrings:RecipesConnectionString".GetValueFor();
 
-            return getInternalRecipes("SELECT * FROM Recipes", System.Data.CommandType.Text, cs);
+            return getInternalRecipes("sSelectRecipes", System.Data.CommandType.StoredProcedure, cs);
         }
     }
 }
