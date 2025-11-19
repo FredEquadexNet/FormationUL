@@ -17,5 +17,10 @@ namespace Services
             var json = File.ReadAllText("recipes.json");
             return JsonConvert.DeserializeObject<List<Recipe>>(json)!;
         }
+
+        public override List<Recipe> GetByTitle(string title)
+        {
+            return GetAll().Where(@r => @r.Title.Contains(title)).ToList();
+        }
     }
 }

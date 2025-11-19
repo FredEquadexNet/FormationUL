@@ -18,6 +18,14 @@ namespace Services
 
             return getInternalRecipes("sSelectRecipes", System.Data.CommandType.StoredProcedure, cs);
         }
+
+        public override List<Recipe> GetByTitle(string title)
+        {
+            var cs = "ConnectionStrings:RecipesConnectionString".GetValueFor();
+
+            return getInternalRecipes("sSelectRecipes", System.Data.CommandType.StoredProcedure, cs, title);
+
+        }
     }
 }
 

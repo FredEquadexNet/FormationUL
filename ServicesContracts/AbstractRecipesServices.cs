@@ -10,7 +10,7 @@ namespace ServicesContracts
 {
     public abstract class AbstractRecipesServices
     {
-        protected List<Recipe> getInternalRecipes(String commandText, System.Data.CommandType commandType, String connectionString)
+        protected List<Recipe> getInternalRecipes(String commandText, System.Data.CommandType commandType, String connectionString, String? title = null)
         {
             var recipes = new List<Recipe>();
 
@@ -22,6 +22,11 @@ namespace ServicesContracts
                 var cmd = cn.CreateCommand();
                 cmd.CommandText = commandText;
                 cmd.CommandType = commandType;
+
+                if (!String.IsNullOrEmpty(title))
+                {
+                    cmd.Parameters.AddWithValue("@title", title);
+                }
 
                 var reader = cmd.ExecuteReader();
 
@@ -36,5 +41,7 @@ namespace ServicesContracts
         }
 
         public abstract List<Recipe> GetAll();
+
+        public abstract List<Recipe> GetByTitle(String title);
     }
 }

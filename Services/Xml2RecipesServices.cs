@@ -22,5 +22,10 @@ namespace Services
                 Title = @node!.Attribute("title")!.Value
             }).ToList();
         }
+
+        public override List<Recipe> GetByTitle(string title)
+        {
+            return GetAll().Where(@r => @r.Title.Contains(title)).ToList();
+        }
     }
 }
