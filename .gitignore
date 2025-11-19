@@ -1,0 +1,19 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/FormationUL/CopilotIndices/17.14.1368.60722
+/.vs/FormationUL/FileContentIndex
+/.vs/ProjectEvaluation
+/.vs/FormationUL/v17
+/.vs/SolutionFred/CopilotIndices/17.14.1368.60722
+/.vs/SolutionFred/FileContentIndex
+/.vs/SolutionFred/v17
+/IHM/bin/Debug/net9.0-windows
+/IHM/obj
+/Services/bin/Debug/net9.0
+/Services/obj
+/ServicesContracts/bin/Debug/net9.0
+/ServicesContracts/obj
+/DataContracts/bin/Debug/net9.0
+/DataContracts/obj
