@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZVpaafJcq1E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fcolin\\Source\\Repos\\FormationUL\\WebHost\\WebHost.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fcolin\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.10\\microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
+    "C:\\Users\\fcolin\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

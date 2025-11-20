@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36623.8 d17.14
+VisualStudioVersion = 17.14.36623.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContracts", "DataContracts\DataContracts.csproj", "{B378BAEF-D267-4CD2-B97C-65FC63A71947}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{3F810A9D-A693-4355-BA74-A33A8671E200}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IHM", "IHM\IHM.csproj", "{1CA02E65-2B7A-4ABC-84B3-1C1379294786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHost", "WebHost\WebHost.csproj", "{129937F8-93A5-4FBE-A260-142C1C78FCE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1CA02E65-2B7A-4ABC-84B3-1C1379294786}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CA02E65-2B7A-4ABC-84B3-1C1379294786}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CA02E65-2B7A-4ABC-84B3-1C1379294786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{129937F8-93A5-4FBE-A260-142C1C78FCE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{129937F8-93A5-4FBE-A260-142C1C78FCE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{129937F8-93A5-4FBE-A260-142C1C78FCE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{129937F8-93A5-4FBE-A260-142C1C78FCE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
